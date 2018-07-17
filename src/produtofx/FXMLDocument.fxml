@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="424.0" prefWidth="550.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="produtofx.FXMLDocumentController">
+  <children>
+    <TabPane layoutX="14.0" layoutY="14.0" prefHeight="389.0" prefWidth="522.0" tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab text="Client">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <TextField id="textId" fx:id="textIdClient" layoutX="21.0" layoutY="62.0" prefWidth="200.0" />
+                <TextField id="textAmount" fx:id="textAmountClient" layoutX="261.0" layoutY="62.0" prefWidth="200.0" />
+                <Text layoutX="96.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" />
+                <Text layoutX="340.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount" />
+                <Text layoutX="74.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total:" />
+                <TextArea fx:id="textAreaProductsClient" layoutX="14.0" layoutY="140.0" prefWidth="487.0" wrapText="true" />
+                <Button id="buttonConfirm" fx:id="buttonListClient" layoutX="213.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleButtonListClient" text="List" />
+                <Button fx:id="buttonConfirm" layoutX="444.0" layoutY="105.0" mnemonicParsing="false" onAction="#handleButtonFinish" text="Finish" />
+                <TextField id="text" fx:id="textTotal" layoutX="137.0" layoutY="101.0" prefWidth="200.0" />
+                <Button fx:id="buttonClear" layoutX="448.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonClear" text="Clear" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Administrator">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <Button fx:id="buttonInclude" layoutX="30.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonInclude" text="Include" />
+                <Button fx:id="buttonList" layoutX="162.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleButtonList" text="List" />
+                <Button fx:id="buttonDelete" layoutX="269.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleButtonDelete" text="Delete" />
+                <Button fx:id="buttonUpdate" layoutX="392.0" layoutY="16.0" mnemonicParsing="false" onAction="#handleButtonUpdate" text="Update" />
+                <TextField fx:id="textId" layoutX="11.0" layoutY="97.0" prefWidth="49.0" />
+                <TextField fx:id="textName" layoutX="73.0" layoutY="97.0" prefWidth="89.0" />
+                <TextField id="text" fx:id="textCostValue" layoutX="180.0" layoutY="97.0" prefWidth="89.0" />
+                <TextField fx:id="textSaleValue" layoutX="281.0" layoutY="97.0" prefWidth="104.0" />
+                <TextField fx:id="textAmount" layoutX="408.0" layoutY="97.0" prefWidth="89.0" />
+                <Text layoutX="35.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" />
+                <Text layoutX="98.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+                <Text layoutX="191.0" layoutY="80.0" scaleX="1.0445522415641053" scaleY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cost value" />
+                <Text layoutX="305.0" layoutY="84.0" scaleX="0.8855712335002276" scaleY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sale value" />
+                <Text layoutX="430.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount" />
+                <TextArea id="textProducts" fx:id="textAreaProducts" layoutX="14.0" layoutY="157.0" prefHeight="177.0" prefWidth="483.0" wrapText="true" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+  </children>
+</AnchorPane>
