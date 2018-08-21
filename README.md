@@ -1,1 +1,1 @@
-# Basic CRUD with JPA and Hibernate
+# Basic JavaFX CRUD with JPA and Hibernate
